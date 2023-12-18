@@ -115,7 +115,7 @@ const Users = () => {
                     <td className="px-6 py-4 flex items-center">
                       <div
                         className={
-                          "flex items-start text-success bg-success-50 text-success-700 text-error-500 bg-error-50 text-error-700 py-0.5 px-2 rounded-2xl mr-5"
+                          "flex items-start text-success bg-success-50 text-success-700 bg-error-50 text-error-700 py-0.5 px-2 rounded-2xl mr-5"
                         }
                       >
                         This is dummy status
@@ -138,6 +138,24 @@ const Users = () => {
                 ))}
               </tbody>
             </table>
+            <div className="flex items-center justify-between p-4">
+              <a
+                href="#"
+                className="flex items-center justify-center px-3 h-8 me-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              >
+                Previous
+              </a>
+              <div>
+                <span>1</span> of <span>{users.total_pages}</span>
+              </div>
+              <a
+                href="#"
+                className="flex items-center justify-center px-3 h-8 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              >
+                Next
+              </a>
+            </div>
+
             {/* {users.data.map((user) => (
               <div key={user.id}>
                 <p>
@@ -243,8 +261,26 @@ const Users = () => {
                   </tr>
                 </tbody>
               </table>
+              <div className="flex items-center justify-between p-4">
+                <a
+                  href="#"
+                  className="flex items-center justify-center px-3 h-8 me-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                >
+                  Previous
+                </a>
+                <div>
+                  <span>1</span> of <span>{users.total_pages}</span>
+                </div>
+                <a
+                  href="#"
+                  className="flex items-center justify-center px-3 h-8 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                >
+                  Next
+                </a>
+              </div>
             </div>
-            <div className="flex items-center justify-between p-4">
+
+            {/* <div className="flex items-center justify-between p-4">
               <a
                 href="#"
                 className="flex items-center justify-center px-3 h-8 me-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
@@ -260,7 +296,7 @@ const Users = () => {
               >
                 Next
               </a>
-            </div>
+            </div> */}
           </>
         )}
       </div>
